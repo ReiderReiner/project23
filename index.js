@@ -1,5 +1,5 @@
 import './index.css';
-import App from "./modules/app.js"
+import App from "./src/modules/app.js"
 
 const app = new App()
 app.run()

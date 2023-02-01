@@ -5,10 +5,12 @@ export default class App{
     this.#donateForm = new DonateForm()
     }
     get getDonateForm(){
+        
         return this.#donateForm.render()
     }
     run(){
         const Body = document.querySelector("body")
         console.log(this.#donateForm.getDonateForm)
+        Body.append(this.#donateForm.render())
     }
 }

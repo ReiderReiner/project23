@@ -4,8 +4,11 @@ export default class App{
     constructor(){
     this.#donateForm = new DonateForm()
     }
+    get getDonateForm(){
+        return this.#donateForm.render()
+    }
     run(){
         const Body = document.querySelector("body")
-        Body.this.#donateForm.render()
+        Body.getDonateForm
     }
 }

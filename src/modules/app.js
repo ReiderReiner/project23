@@ -1,16 +1,17 @@
 import DonateForm from "./donate-form.js"
+import DonateList from "./donate-list.js"
+
 export default class App{
     #donateForm
-    constructor(){
+    #donateList
+    constructor(donates){
+    this.donates = donates
     this.#donateForm = new DonateForm()
-    }
-    get getDonateForm(){
-        
-        return this.#donateForm.render()
+    this.#donateList = new DonateList(this.donates)
     }
     run(){
         const Body = document.querySelector("body")
-        console.log(this.#donateForm.getDonateForm)
         Body.append(this.#donateForm.render())
+        Body.append(this.#donateList.render())
     }
 }

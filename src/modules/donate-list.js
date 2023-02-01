@@ -1,9 +1,11 @@
 
 export default class DonateList{
-    constructor(donates){
-        this.donates = donates
+    constructor(state){
+        this.state = state
+        this.donates = this.state.donates
     }
     render(){
+        console.log(this.donates)
         const donatesContainer = document.createElement("div")
         donatesContainer.className = ("donates-container")
 
@@ -17,6 +19,7 @@ export default class DonateList{
         donatesContainerTitle.append(donatesContainerDonates)
         
         for(let i = 0; i < this.donates.length; i++){
+            console.log(this.donates[i].date )
             const donateItem = document.createElement("div")
             donateItem.className = ("donate-item")
             donateItem.textContent = this.donates[i].date 

@@ -1,5 +1,7 @@
 export default class DonateForm{
-    constructor(){}
+    constructor(totalAmount){
+        this.totalAmount = totalAmount
+    }
     render(){
         const FormDonate = document.createElement("form")
         FormDonate.className = ("donate-form")

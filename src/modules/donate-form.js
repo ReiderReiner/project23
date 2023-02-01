@@ -1,4 +1,4 @@
-export default class donateForm{
+export default class DonateForm{
     constructor(){}
     render(){
         const FormDonate = document.createElement("form")
@@ -28,5 +28,7 @@ export default class donateForm{
         DonateFormSubmitButton.className = ("donate-form__submit-button")
         DonateFormSubmitButton.type = "submit"
         DonateFormSubmitButton.textContent = "Задонатить"
+
+        return FormDonate
     }
 }

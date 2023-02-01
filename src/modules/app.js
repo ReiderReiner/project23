@@ -1,4 +1,4 @@
-import DonateForm from "./donate-form"
+import DonateForm from "./donate-form.js"
 export default class App{
     #donateForm
     constructor(){
@@ -9,7 +9,6 @@ export default class App{
     }
     run(){
         const Body = document.querySelector("body")
-        Body.append(this.#donateForm.getDonateForm)
-        console.log(this.#donateForm.render())
+        console.log(this.#donateForm.getDonateForm)
     }
 }

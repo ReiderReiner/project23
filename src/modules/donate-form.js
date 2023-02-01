@@ -2,7 +2,7 @@ export default class donateForm{
     constructor(){}
     render(){
         const FormDonate = document.createElement("form")
-        FormDonate.className("donate-form")
+        FormDonate.className = ("donate-form")
 
         const IdTotalAmount = document.createElement("h1")
         FormDonate.append(IdTotalAmount)
@@ -11,12 +11,12 @@ export default class donateForm{
 
         const DonateFormInputLabel = document.createElement("label")
         FormDonate.append(DonateFormInputLabel)
-        DonateFormInputLabel.className("donate-form__input-label")
+        DonateFormInputLabel.className = ("donate-form__input-label")
         DonateFormInputLabel.textContent = "Введите сумму в $"
 
         const DonateFormInputInput = document.createElement("input")
         DonateFormInputLabel.append(DonateFormInputInput)
-        DonateFormInputInput.className("donate-form__donate-input")
+        DonateFormInputInput.className = ("donate-form__donate-input")
         DonateFormInputInput.name = "amount"
         DonateFormInputInput.type = "number"
         DonateFormInputInput.max = "100"
@@ -25,7 +25,7 @@ export default class donateForm{
 
         const DonateFormSubmitButton = document.createElement("button")
         FormDonate.append(DonateFormSubmitButton)
-        DonateFormSubmitButton.className("donate-form__submit-button")
+        DonateFormSubmitButton.className = ("donate-form__submit-button")
         DonateFormSubmitButton.type = "submit"
         DonateFormSubmitButton.textContent = "Задонатить"
     }

@@ -9,6 +9,7 @@ export default class App{
     }
     run(){
         const Body = document.querySelector("body")
-        Body.getDonateForm
+        Body.append(this.#donateForm.getDonateForm)
+        console.log(this.#donateForm.render())
     }
 }
